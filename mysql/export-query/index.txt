@@ -1,0 +1,10 @@
+SELECT * FROM members WHERE Member_ID NOT IN (SELECT m.Member_ID FROM members as m INNER JOIN wkprofiles as wk ON m.webflow_item_id = wk.Item_ID) INTO OUTFILE 'D:/xampp/htdocs/azzok/php/import-csv/csv/querydump1.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
+
+=========================================================
+
+
+ INTO OUTFILE 'D:/xampp/htdocs/azzok/php/import-csv/csv/querydump1.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
+
+
+
+ SELECT  * FROM memberstack as ms INNER JOIN workprofiles as wp ON ms.col_49 = wp.wpcol_4 INTO OUTFILE 'D:/xampp/htdocs/azzok/php/import-csv/csv/querydump1.csv' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '\n'
